@@ -1,0 +1,6 @@
+<h2>Airlines list:</h2>
+<ul *ngIf="airlines">
+    <li *ngFor="let airline of airlines">
+    {{airline.name}} ICAO code:{{airline.icao_code}}, IATA code: {{airline.iata_code}}
+    </li>
+</ul>
